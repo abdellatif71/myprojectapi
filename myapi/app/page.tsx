@@ -19,7 +19,7 @@ const Home = () => {
   useEffect(() => {
 
     const fetchArticles = async () => {
-      try {
+    
         const apiKey = '5763595b2c4446cdaae3a00385b2add4'; // Ersetze mit deinem API-Schlüssel
         const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
         const response = await fetch(apiUrl);
@@ -30,9 +30,7 @@ const Home = () => {
         const data = await response.json();
 
         setArticles(data.articles);
-      } catch (error) {
-        console.error('API Error:', error);
-      }
+     
     };
 
     fetchArticles();
