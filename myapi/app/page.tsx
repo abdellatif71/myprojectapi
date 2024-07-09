@@ -42,7 +42,7 @@ const Home = () => {
         <title>Next.js News App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      {/* 7. JSX rendert die Artikel */}
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to Next.js News App
